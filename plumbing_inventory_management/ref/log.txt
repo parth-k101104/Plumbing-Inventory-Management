@@ -1,0 +1,42 @@
+PVC insertion
+db.plumbing.insertMany([
+    { id: "PVC", item: "PVC pipe 4kg", size: { h: 4, uom: "in" }, unit: "RFT", quantity: null },
+    { id: "PVC", item: "PVC pipe 2.5kg", size: { h: 3, uom: "in" }, unit: "RFT", quantity: null },
+    { id: "PVC", item: "PVC pipe 2.5 kg", size: { h: 2, uom: "in" }, unit: "RFT", quantity: null },
+    { id: "PVC", item: "PVC pipe 2.5kg", size: { h: 2.5, uom: "in" }, unit: "Rft", quantity: null },
+    { id: "PVC", item: "PVC pipe", size: { h: 1.5, uom: "in" }, unit: "Rft", quantity: null },
+    { id: "PVC", item: "PVC coller", size: { h: 4, uom: "in" }, unit: "No", quantity: null },
+    { id: "PVC", item: "PVC coller", size: { h: 3, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coller", size: { h: 2, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coller", size: { h: 2.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coller", size: { h: 1.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC bend", size: { h: 4, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC bend", size: { h: 3, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC bend", size: { h: 2, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC bend", size: { h: 2.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC bend", size: { h: 1.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coupler", size: { h: 4, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coupler", size: { h: 3, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coupler", size: { h: 2, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coupler", size: { h: 2.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC coupler", size: { h: 1.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC T", size: { h: 4, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC T", size: { h: 3, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC T", size: { h: 2, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC T", size: { h: 2.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC T", size: { h: 1.5, uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC reducer", size: { h: "3x2", uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC reducer", size: { h: "2X1.5", uom: "in" }, unit: "Nos", quantity: null },
+    { id: "PVC", item: "PVC reducer", size: { h: "4x3", uom: "in" }, unit: "Nos", quantity: null }
+]);
+
+SWR insertion
+db.plumbing.insertMany([
+    { item: "SWR pipe", size: { h: "4", uom: "in" }, unit: "Rft", quantity: null},
+    { item: "SWR pipe", size: { h: "2.5", uom: "in" }, unit: "Rft", quantity: null },
+    { item: "SWR elbow", size: { h: "4", uom: "in" }, unit: "Nos", quantity: null },
+    { item: "SWR elbow", size: { h: "2.5", uom: "in" }, unit: "Nos", quantity: null },
+    { item: "SWR plug bend", size: { h: "4", uom: "in" }, unit: "Nos", quantity: null },
+    { item: "SWR plug bend", size: { h: "2.5", uom: "in" }, unit: "Nos", quantity: null }
+])
+

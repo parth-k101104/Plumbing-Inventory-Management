@@ -1,0 +1,233 @@
+/* Overall Page Styling */
+body {
+    font-family: "Airbnb Cereal App", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(212, 212, 189);
+}
+
+/* Container and Layout */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #3b3a3d;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar li.active {
+    background-color: #73937E;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
+}
+
+.sidebar li:hover {
+    background-color: #73937E;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+.sidebar1{
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #6e6d74;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: calc(100% - 20%);
+    height: 40px;
+    z-index: 1;
+}
+
+
+.table-container {
+    width: 90%;
+    height: calc(100vh - 80px); /* Sets the height to the viewport height minus 100px */
+    overflow-y: auto;
+    overflow-x: auto;
+    justify-content: center;
+    margin: 0px 57px;
+    border-color: black;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 100px;
+    border-radius: 12px;
+    border-color: black;
+    border-radius: 14px;
+}
+.inventory-table th{
+    position: sticky;
+    top: 80px;
+}
+
+.inventory-table th, .inventory-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.inventory-table th {
+    background-color: #3b3a3d;
+    color: #ffffff;
+    border-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inventory-table tr:hover td {
+    background-color: rgb(255, 255, 255);
+}
+/*#dadbd6*/
+.inventory-table td {
+    background-color:rgb(236, 236, 236);
+    color: #333;
+    text-align: center;
+    border-color: black;
+    
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #73937E;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #64a87c;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Status Indicators */
+.status-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.status-indicator.full {
+    background-color: #00c853;
+}
+
+.status-indicator.reorder {
+    background-color: #fbd341;
+}
+
+.status-indicator.low {
+    background-color: #f44336;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80%;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar ul {
+        width: 80%;
+    }
+
+    .sidebar li {
+        margin-bottom: 5px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+}
